@@ -38,15 +38,6 @@ DB_USERNAME=example
 DB_PASSWORD=example
 ```
 
-**4. Making locally-trusted development certificates**
-```
-brew install mkcert
-mkcert -install
-mkdir cert-key
-cd cert-key
-mkcert localhost 127.0.0.1
-```
-
 **4. Build and up docker containers (It may take up to 10 minutes)**
 ```
 docker-compose up -d --build
